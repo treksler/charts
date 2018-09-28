@@ -63,4 +63,4 @@ The following tables lists the configurable parameters of this chart and their d
 | `podSecurityPolicy.enabled`	    | Create & use Pod Security Policy resources  | `false`						      |
 | `serviceAccount.create`	    | Should we create a ServiceAccount	          | `true`						      |
 | `serviceAccount.name`		    | Name of the ServiceAccount to use           | null						      |
-| `mountOptions`		    | NFS mount options (eg. --set mountOptions="{nolock\,sync}")           | null						      |
+| `mountOptions`		    | NFS mount options (eg. --set mountOptions="{nolock\\,sync}")           | null						      |
