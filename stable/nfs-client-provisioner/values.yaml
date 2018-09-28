@@ -69,3 +69,6 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+mountOptions:
+  # - nfsvers=4

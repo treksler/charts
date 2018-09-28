@@ -18,3 +18,4 @@ reclaimPolicy: {{ .Values.storageClass.reclaimPolicy }}
 parameters:
   archiveOnDelete: "{{ .Values.storageClass.archiveOnDelete }}"
 {{ end -}}
+mountOptions: {{ .Values.mountOptions }}
