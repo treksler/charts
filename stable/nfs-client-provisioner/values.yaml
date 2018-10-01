@@ -38,6 +38,9 @@ storageClass:
   # When set to false your PVs will not be archived by the provisioner upon deletion of the PVC.
   archiveOnDelete: true
 
+  mountOptions:
+    # - nfsvers=4
+
 ## For RBAC support:
 rbac:
   # Specifies whether RBAC resources should be created
@@ -69,6 +72,3 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
-
-mountOptions:
-  # - nfsvers=4
