@@ -56,6 +56,7 @@ The following tables lists the configurable parameters of this chart and their d
 | `storageclass.reclaimPolicy`    | Method used to reclaim an obsoleted volume                 | `Delete` 	                              |
 | `storageclass.provisionerName`    | Name of the provisionerName                 | null 	                                              |
 | `storageclass.archiveOnDelete`    | Archive pvc when deleting                   | `true` 	                                              |
+| `storageClass.mountOptions`		    | NFS mount options (eg. --set mountOptions="{nolock\\,sync}")           | null						      |
 | `nfs.server`                      | Hostname of the NFS server                  | null (ip or hostname)                                     |
 | `nfs.path`                        | Basepath of the mount point to be used      | `/ifs/kubernetes`                                         |
 | `resources`                       | Resources required (e.g. CPU, memory)       | `{}`                                                      |
@@ -63,4 +64,3 @@ The following tables lists the configurable parameters of this chart and their d
 | `podSecurityPolicy.enabled`	    | Create & use Pod Security Policy resources  | `false`						      |
 | `serviceAccount.create`	    | Should we create a ServiceAccount	          | `true`						      |
 | `serviceAccount.name`		    | Name of the ServiceAccount to use           | null						      |
-| `mountOptions`		    | NFS mount options (eg. --set mountOptions="{nolock\\,sync}")           | null						      |
