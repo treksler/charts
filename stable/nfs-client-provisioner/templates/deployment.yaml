@@ -42,7 +42,6 @@ spec:
           emptyDir: {}
 {{- else }}
         - name: nfs-client-root
-          nfs:
-            server: {{ .Values.nfs.server }}
-            path: {{ .Values.nfs.path }}
+          persistentVolumeClaim:
+            claimName: nfs-client-pvc
 {{- end }}
