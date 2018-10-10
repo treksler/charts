@@ -43,5 +43,5 @@ spec:
 {{- else }}
         - name: nfs-client-root
           persistentVolumeClaim:
-            claimName: nfs-client-pvc
+            claimName: {{ template "nfs-client-provisioner.fullname" . }}-pvc
 {{- end }}
