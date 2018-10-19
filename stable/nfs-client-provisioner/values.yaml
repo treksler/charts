@@ -38,8 +38,9 @@ storageClass:
   # When set to false your PVs will not be archived by the provisioner upon deletion of the PVC.
   archiveOnDelete: true
 
-  mountOptions:
-    # - nfsvers=4
+# default mount options for NFS and the storageClass
+mountOptions:
+  # - nfsvers=4
 
 ## For RBAC support:
 rbac:

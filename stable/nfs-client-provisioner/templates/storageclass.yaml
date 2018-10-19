@@ -18,9 +18,9 @@ reclaimPolicy: {{ .Values.storageClass.reclaimPolicy }}
 parameters:
   archiveOnDelete: "{{ .Values.storageClass.archiveOnDelete }}"
 {{ end -}}
-{{- if .Values.storageClass.mountOptions }}
+{{- if .Values.mountOptions }}
 mountOptions:
-  {{- range .Values.storageClass.mountOptions }}
+  {{- range .Values.mountOptions }}
   - {{ . }}
   {{- end }}
 {{- end }}
